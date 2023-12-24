@@ -72,7 +72,7 @@ tatsiana@tatsiana-VirtualBox:/etc/apt/sources.list.d$ sudo nano mysql.list
 deb http://repo.mysql.com/apt/ubuntu/ bionic mysql-8.0  
 (ссылку вставить, сохранить)  
 tatsiana@tatsiana-VirtualBox:/etc/apt/sources.list.d$ cd
-tatsiana@tatsiana-VirtualBox:\~\$ sudo apt install mysql-server
+tatsiana@tatsiana-VirtualBox:\~\$ sudo apt install mysql-server  
 tatsiana@tatsiana-VirtualBox:\~$ mysql --version
 ```  
 mysql  Ver 8.0.35 for Linux on x86_64 (MySQL Community Server - GPL)
