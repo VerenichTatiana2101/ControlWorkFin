@@ -1,32 +1,32 @@
 **1. Используя команду cat в терминале операционной системы Linux, создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы), а затем объединить их. Просмотреть содержимое созданного файла. Переименовать файл, дав ему новое имя (Друзья человека).**
 
-tatsiana@tatsiana-VirtualBox:~/CW$ mkdir dir1  
-tatsiana@tatsiana-VirtualBox:~/CW$ mkdir dir2  
-tatsiana@tatsiana-VirtualBox:~/CW$ tree 
+tatsiana@tatsiana-VirtualBox:\~/CW$ mkdir dir1  
+tatsiana@tatsiana-VirtualBox:\~/CW$ mkdir dir2  
+tatsiana@tatsiana-VirtualBox:\~/CW$ tree 
 ```
 .  
 ├── dir1  
 └── dir2
 ```  
-tatsiana@tatsiana-VirtualBox:~/CW$ cd dir1  
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ cat>Pets.txt 
+tatsiana@tatsiana-VirtualBox:\~/CW$ cd dir1  
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Pets.txt 
 ``` 
 dogs  
 cats  
 hamsters  
 ```
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ cat>Packanimals.txt
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Packanimals.txt
 ```  
 horses  
 camels  
 donkeys
 ```  
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ cat Pets.txt Packanimals.txt>HumanFriends.txt  
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ ls
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat Pets.txt Packanimals.txt>HumanFriends.txt  
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ ls
 ```  
 HumanFriends.txt  Packanimals.txt  Pets.txt
 ```  
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ cat HumanFriends.txt
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat HumanFriends.txt
 ```   
 dogs  
 cats  
@@ -35,8 +35,8 @@ horses
 camels  
 donkeys 
 ``` 
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ mv HumanFriends.txt FriendHuman.txt  
-tatsiana@tatsiana-VirtualBox:~/CW/dir1$ ls
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ mv HumanFriends.txt FriendHuman.txt  
+tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ ls
 ```  
 FriendHuman.txt  Packanimals.txt  Pets.txt
 ```  
@@ -67,7 +67,7 @@ FriendHuman.txt
 
 **3. Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.**
 
-tatsiana@tatsiana-VirtualBox:~$ cd /etc/apt/ 
+tatsiana@tatsiana-VirtualBox:\~$ cd /etc/apt/ 
 
 tatsiana@tatsiana-VirtualBox:/etc/apt$ cd sources.list.d/  
 tatsiana@tatsiana-VirtualBox:/etc/apt/sources.list.d$ sudo nano mysql.list  
@@ -112,4 +112,8 @@ tatsiana@tatsiana-VirtualBox:~$ sudo dpkg -r virtualbox-7.0
 Обрабатываются триггеры для desktop-file-utils (0.26-1ubuntu3) …
 ```
 
+**5. Выложить историю команд в терминале ubuntu.**
 
+![Задание 1-2](VirtualBox_vbox_24_12_2023_01_44_51.png)
+
+![Задание 3-4](VirtualBox_vbox_24_12_2023_01_48_01.png)
