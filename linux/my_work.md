@@ -10,11 +10,10 @@ tatsiana@tatsiana-VirtualBox:\~/CW$ tree
 ```  
 tatsiana@tatsiana-VirtualBox:\~/CW$ cd dir1  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Pets.txt 
-``` 
-dogs  
+> dogs   
 cats  
 hamsters  
-```
+
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Packanimals.txt
 ```  
 horses  
