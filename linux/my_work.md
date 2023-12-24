@@ -3,11 +3,10 @@
 tatsiana@tatsiana-VirtualBox:\~/CW$ mkdir dir1  
 tatsiana@tatsiana-VirtualBox:\~/CW$ mkdir dir2  
 tatsiana@tatsiana-VirtualBox:\~/CW$ tree 
-```
-.  
+>.  
 ├── dir1  
 └── dir2
-```  
+
 tatsiana@tatsiana-VirtualBox:\~/CW$ cd dir1  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Pets.txt 
 > dogs   
@@ -15,45 +14,38 @@ cats
 hamsters  
 
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat>Packanimals.txt
-```  
-horses  
+> horses  
 camels  
 donkeys
-```  
+ 
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat Pets.txt Packanimals.txt>HumanFriends.txt  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ ls
-```  
-HumanFriends.txt  Packanimals.txt  Pets.txt
-```  
+> HumanFriends.txt  Packanimals.txt  Pets.txt
+ 
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cat HumanFriends.txt
-```   
-dogs  
+> dogs  
 cats  
 hamsters  
 horses  
 camels  
 donkeys 
-``` 
+
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ mv HumanFriends.txt FriendHuman.txt  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ ls
-```  
-FriendHuman.txt  Packanimals.txt  Pets.txt
-```  
+> FriendHuman.txt  Packanimals.txt  Pets.txt  
 
 ### **2. Создать директорию, переместить файл туда.** 
 
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cd  
 tatsiana@tatsiana-VirtualBox:\~$ cd CW
 tatsiana@tatsiana-VirtualBox:\~/CW\$ ls
-```  
-dir1  dir2
-```  
+> dir1  dir2
+  
 tatsiana@tatsiana-VirtualBox:\~/CW$ mv dir1/FriendHuman.txt dir2    
 tatsiana@tatsiana-VirtualBox:\~/CW$ cd dir1  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ ls
-```  
-Packanimals.txt  Pets.txt
-```   
+> Packanimals.txt  Pets.txt
+  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cd  
 tatsiana@tatsiana-VirtualBox:\~\$ cd CW
 tatsiana@tatsiana-VirtualBox:\~/CW\$ cd dir2  
