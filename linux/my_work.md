@@ -50,9 +50,7 @@ tatsiana@tatsiana-VirtualBox:\~/CW/dir1$ cd
 tatsiana@tatsiana-VirtualBox:\~\$ cd CW
 tatsiana@tatsiana-VirtualBox:\~/CW\$ cd dir2  
 tatsiana@tatsiana-VirtualBox:\~/CW/dir2$ ls
-```  
-FriendHuman.txt  
-```
+> FriendHuman.txt  
 
 ### **3. Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.**
 
@@ -65,9 +63,8 @@ deb http://repo.mysql.com/apt/ubuntu/ bionic mysql-8.0
 tatsiana@tatsiana-VirtualBox:/etc/apt/sources.list.d$ cd  
 tatsiana@tatsiana-VirtualBox:\~\$ sudo apt install mysql-server  
 tatsiana@tatsiana-VirtualBox:\~$ mysql --version
-```  
-mysql  Ver 8.0.35 for Linux on x86_64 (MySQL Community Server - GPL)
-```   
+> mysql  Ver 8.0.35 for Linux on x86_64 (MySQL Community Server - GPL)
+   
 установить ключи  
 sudo apt update  
 
@@ -88,18 +85,17 @@ sudo apt update
 sudo apt upgrade –y  
 Удалить:  
 tatsiana@tatsiana-VirtualBox:\~$ sudo dpkg -r virtualbox-7.0
-```  
-(Чтение базы данных … на данный момент установлено 230356 файлов и каталогов.)  
+> (Чтение базы данных … на данный момент установлено 230356 файлов и каталогов.)  
 Удаляется virtualbox-7.0 (7.0.10-158379~Ubuntu~jammy) …  
 Обрабатываются триггеры для shared-mime-info (2.1-2) …  
 Обрабатываются триггеры для hicolor-icon-theme (0.17-2) …  
 Обрабатываются триггеры для mailcap (3.70+nmu1ubuntu1) …  
 Обрабатываются триггеры для gnome-menus (3.36.0-1ubuntu3) …  
 Обрабатываются триггеры для desktop-file-utils (0.26-1ubuntu3) …
-```
 
 ### **5. Выложить историю команд в терминале ubuntu.**
 
+*Задание 1-2:*
 ![Задание 1-2](VirtualBox_vbox_24_12_2023_01_44_51.png)
-
+*Задание 3-4:*
 ![Задание 3-4](VirtualBox_vbox_24_12_2023_01_48_01.png)
