@@ -1,6 +1,8 @@
 ### **7. В подключенном MySQL репозитории создать базу данных “Друзья человека”**
->CREATE DATABASE HumanFriends;  
+```
+CREATE DATABASE HumanFriends;  
 USE HumanFriends;
+```
 
 ### **8. Создать таблицы с иерархией из диаграммы в БД.**  
 Тут возникли вопросы. т.к. при постороении схем по предмету "Знакомство с базами данных" много было заданий на зависимости, но в mysql возникли трудности, есть внутренний и внешний ключи, но как конктретно создать иерархию не совсем понятно. Перед работой рассмотрела оба прикреплённых задания, которые и использовала для экономии времени данные были взяты из заданий.  
@@ -24,6 +26,7 @@ VALUES
 ("Buddy", "Dog", '2018-12-10', "Sit, Paw, Bark"),
 ("Bella", "Dog", '2019-11-11', "Sit, Stay, Roll");
 ```
+![Dogs](dogs.png)
 
 Cats
 ```
@@ -42,6 +45,7 @@ VALUES
 ("Smudge", "Cat", '2020-02-20', "Sit, Pounce, Scratch"),
 ("Oliver", "Cat", '2020-06-30', "Meow, Scratch, Jump");
 ```
+![Cats](cats.png)
 
 Hamsters
 ```
@@ -59,6 +63,7 @@ VALUES
 ("Hammy", "Hamster", '2021-03-10', "Roll, Hide"),
 ("Peanut", "Hamster", '2021-08-01', "Roll, Spin");
 ```
+![Hamsters](hamsters.png)
 
 Horses
 ```
@@ -77,6 +82,7 @@ VALUES
 ("Storm", "Horse",	'2014-05-05', "Trot, Canter"),
 ("Blaze", "Horse", '2016-02-29', "Trot, Jump, Gallop");
 ```
+![Horses](horses.png)
 
 Camels
 ```
@@ -95,6 +101,7 @@ VALUES
 ("Dune", "Camel", '2018-12-12',	"Walk, Sit"),
 ("Sahara", "Camel",	'2015-08-14', "Walk, Run");
 ```
+![Camels](camels.png)
 
 Donkeys
 ```
@@ -112,6 +119,7 @@ VALUES
 ("Eeyore", "Donkey", '2017-09-18', "Walk, Carry Load, Bray"),
 ("Burro", "Donkey", '2019-01-23', "Walk, Bray, Kick");
 ```
+![Donkeys](donkeys.png)
 
 
 
