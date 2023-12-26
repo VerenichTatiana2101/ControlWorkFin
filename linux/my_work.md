@@ -96,6 +96,6 @@ tatsiana@tatsiana-VirtualBox:\~$ sudo dpkg -r virtualbox-7.0
 ### **5. Выложить историю команд в терминале ubuntu.**
 
 *Задание 1-2:*
-![Задание 1-2](png\VirtualBox_vbox_24_12_2023_01_44_51.png)
+![Задание 1-2](png/VirtualBox_vbox_24_12_2023_01_44_51.png)
 *Задание 3-4:*
-![Задание 3-4](png\VirtualBox_vbox_24_12_2023_01_48_01.png)
+![Задание 3-4](png/VirtualBox_vbox_24_12_2023_01_48_01.png)
