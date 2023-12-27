@@ -121,6 +121,19 @@ VALUES
 ```
 ![Donkeys](png/donkeys.png)
 
+Раозобравшись немного с иерархией в mysql, добавляю внешние ключи.
+```
+ALTER TABLE cats
+ADD FOREIGN KEY (id) REFERENCES pets(id);
+
+ALTER TABLE dogs
+ADD FOREIGN KEY (id) REFERENCES pets(id);
+
+ALTER TABLE hamsters
+ADD FOREIGN KEY (id) REFERENCES pets(id);
+````
+Мне кажется это важный момент в базах данных, как связи таблиц, но почему-то было недостаточно внимания уделено этой теме. В дальнейшем изучу самостоятельно, осталось много вопросов.
+
 ### **10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.**
 ```
 TRUNCATE TABLE camels;
@@ -151,4 +164,23 @@ FROM (
 
 ### **12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.**
 
+```
+DROP TABLE IF EXISTS all_data;
+CREATE TABLE all_data AS
+SELECT * 
+FROM (
+    SELECT *, 'cats' AS animal_type FROM cats
+    UNION ALL
+    SELECT *, 'dogs' AS animal_type FROM dogs
+    UNION ALL
+    SELECT *, 'hamsters' AS animal_type FROM hamsters
+    UNION ALL
+    SELECT *, 'camels' AS animal_type FROM camels
+    UNION ALL
+    SELECT *, 'horses' AS animal_type FROM horses
+    UNION ALL
+    SELECT *, 'donkeys' AS animal_type FROM donkeys
+) AS res
+ORDER BY Type;
+```
 
