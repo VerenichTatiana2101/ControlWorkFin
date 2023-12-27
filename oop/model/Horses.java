@@ -10,7 +10,7 @@ public class Horses extends Packanimals {
 
     @Override
     public String toString() {
-        return "Horses []";
+        return super.toString();
     }
-  
+
 }

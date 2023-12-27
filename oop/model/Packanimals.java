@@ -8,6 +8,4 @@ public class Packanimals extends Animals {
         super(type, name, birthday, commands);
     }
 
-
- 
 }

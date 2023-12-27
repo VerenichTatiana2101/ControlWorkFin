@@ -1,10 +1,11 @@
 package model;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract class Animals{
+public abstract class Animals {
     private static final AtomicInteger counter = new AtomicInteger(1);
     private int id;
     private String type;
@@ -62,10 +63,9 @@ public abstract class Animals{
 
     @Override
     public String toString() {
-        return "Animals [id=" + id + ", type=" + type + ", name=" + name + ", birthday=" + birthday + ", commands="
+        return "Animals " + getClass() + "[id=" + id + ", type=" + type + ", name=" + name + ", birthday="
+                + birthday + ", commands="
                 + commands + "]";
     }
 
-
-    
 }

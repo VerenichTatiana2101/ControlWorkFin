@@ -10,7 +10,7 @@ public class Dogs extends Pets {
 
     @Override
     public String toString() {
-        return "Dogs []";
+        return super.toString();
     }
 
 }
