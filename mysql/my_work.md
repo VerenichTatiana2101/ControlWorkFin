@@ -121,13 +121,33 @@ VALUES
 ```
 ![Donkeys](png/donkeys.png)
 
-
-
 ### **10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.**
-
+```
+TRUNCATE TABLE camels;
+```
+![del_camels](png/replace_camels.png)
 
 ### **11. Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице**
-
+т.к указано создать таблицу, то создаю таблицу, а не делаю выборку.
+```
+DROP TABLE IF EXISTS young_animals;
+CREATE TABLE young_animals
+SELECT Name, Type, BirthDate, FLOOR(DATEDIFF(current_date, BirthDate)/30) as month_old  
+FROM (
+    SELECT * FROM cats
+    UNION
+    SELECT * FROM dogs
+    UNION
+    SELECT * FROM hamsters
+    UNION
+    SELECT * FROM camels
+    UNION
+    SELECT * FROM horses
+    UNION
+    SELECT * FROM donkeys
+) AS res where DATEDIFF(current_date, BirthDate) / 365 > 1 AND DATEDIFF(current_date, BirthDate) / 365 < 3;
+```
+![young_animals](png/young_animals.png)
 
 ### **12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.**
 
