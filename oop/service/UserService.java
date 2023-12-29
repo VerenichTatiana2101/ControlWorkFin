@@ -6,15 +6,14 @@ import java.util.List;
 import model.Animals;
 import model.Camels;
 import model.Cats;
+import model.DataBase;
 import model.Dogs;
 import model.Donkeys;
 import model.Hamsters;
 import model.Horses;
-import observer.ConcreteObservable;
-import observer.Observable;
 
 public class UserService implements DataService {
-    Observable observable = new ConcreteObservable();
+    DataBase base = new DataBase();
 
     @Override
     public Animals createAnimals(String type, String name, LocalDate birthday, List<String> commands) {
@@ -43,8 +42,20 @@ public class UserService implements DataService {
                 System.out.println("Некорректный тип животного!");
                 return null;
         }
-        observable.registerAnimal(animal.getName());
+        base.registerAnimal(animal);
         return animal;
     }
+
+    @Override
+    public String getListAnimals() {
+        return base.toString();
+    }
+
+    @Override
+    public List<String> getCommands(String name) {
+        return base.showCommands(name);
+    }
+
+
 
 }

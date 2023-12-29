@@ -9,8 +9,18 @@ import service.UserService;
 
 public class Controller {
     
-    private DataService serviceAn = new UserService();
+    private DataService serviceAnimal = new UserService();
     public Animals createNewAnimals(String type, String name, LocalDate birthday, List<String> commands) {
-        return serviceAn.createAnimals(type, name, birthday, commands);
+        return serviceAnimal.createAnimals(type, name, birthday, commands);
     }
+
+    public String getListAnimals(){
+        return serviceAnimal.getListAnimals();
+    }
+
+    public List<String> showCommands(String name){
+        return serviceAnimal.getCommands(name);
+    }
+
+
 }
