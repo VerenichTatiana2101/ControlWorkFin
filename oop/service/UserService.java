@@ -14,7 +14,6 @@ import model.Horses;
 
 public class UserService implements DataService {
     DataBase base = new DataBase();
-
     @Override
     public Animals createAnimals(String type, String name, LocalDate birthday, List<String> commands) {
         Animals animal;
@@ -56,6 +55,9 @@ public class UserService implements DataService {
         return base.showCommands(name);
     }
 
-
+    @Override
+    public void setCommands(String name) {
+        base.learnCommands(name);
+    }
 
 }

@@ -1,12 +1,10 @@
 package view;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import controller.Controller;
-import model.Animals;
 import model.DataBase;
 
 public class UserView {
@@ -15,13 +13,13 @@ public class UserView {
     Controller controller = new Controller();
     int inCommand;
 
-    public void userChoice(ArrayList<Animals> myList) {
+    public void userChoice() {
         while (true) {
-            System.out.println("Select:\n"
-                    + "1 - add animal\n"
-                    + "2 - show a animals\n"
-                    + "3 - show commands\n"
-                    + "4 - learn commands\n"
+            System.out.println("Select an item from the menu:\n"
+                    + "1 - add an animal\n"
+                    + "2 - show list of animals\n"
+                    + "3 - see a list of animal commands\n"
+                    + "4 - teach the animal new commands\n"
                     + "5 - exit");
             inCommand = scanner.nextInt();
             scanner.nextLine();
@@ -38,8 +36,9 @@ public class UserView {
                     // посмотреть список поманд
                     System.out.println(controller.showCommands(askName()));   
                 case 4:
-                    // обучить животное команде
-                    db.learnCommands(askName());
+                    // обучить животное команде, сам метод в data base, 
+                    // не успела доделать пока не работает
+                    controller.learnCommands(askName());
                     break;
                 case 5:
                     System.exit(0);
@@ -52,24 +51,24 @@ public class UserView {
     }
 
     private String askName() {
-        System.out.println("Введите имя:");
+        System.out.println("Enter the animal's name:");
         String name = scanner.nextLine();
         return name;
     }
 
     // Добавление животных
     public void addAnimal() {
-        System.out.println("Введите тип животного (cat, dog, hamster, horse, donkey, camel):");
+        System.out.println("Enter the type of animal (cat, dog, hamster, horse, donkey, camel):");
         String type = scanner.nextLine();
 
-        System.out.println("Введите имя животного:");
+        System.out.println("Enter the animal's name:");
         String name = scanner.nextLine();
 
-        System.out.print("Ведите дату рождения в формате (yyyy-MM-dd): ");
+        System.out.print("Enter your date of birth in the format (yyyy-MM-dd): ");
         String birthdateString = scanner.nextLine();
         LocalDate birthday = LocalDate.parse(birthdateString);
 
-        System.out.println("Введите список команд, которое выполняет животное: ");
+        System.out.println("Enter a list of animal commands (comma separated): ");
         String commandsString = scanner.nextLine();
         List<String> commands = Arrays.asList(commandsString.split(","));
         System.out.println(controller.createNewAnimals(type, name, birthday, commands));

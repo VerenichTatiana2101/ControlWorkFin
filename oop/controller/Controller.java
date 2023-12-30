@@ -22,5 +22,9 @@ public class Controller {
         return serviceAnimal.getCommands(name);
     }
 
+    public void learnCommands(String name){
+        serviceAnimal.setCommands(name);
+    }
+
 
 }

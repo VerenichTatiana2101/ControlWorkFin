@@ -10,4 +10,6 @@ public interface DataService {
     String getListAnimals();
 
     List<String> getCommands(String name);
+
+    void setCommands(String name);
 }
